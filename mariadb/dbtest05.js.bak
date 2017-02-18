@@ -9,8 +9,8 @@ var connection = mysql.createConnection({
 connection.connect();
 
 var query = connection.query(
-  'UPDATE user SET name = ? WHERE id = ?', 
-  ['kenu.heo', 1 ], function(err, result) {
+  'DELETE FROM user WHERE id = ?', 
+  [ 1 ], function(err, result) {
   console.log(result);
 });
 connection.end();

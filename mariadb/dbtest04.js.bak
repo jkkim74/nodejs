@@ -8,13 +8,9 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query('SELECT * FROM user', function(err, rows, fields) {
-  if (err) throw err;
-
-  console.log('The user is: ', rows[0]);
-  for(idx in rows){
-		console.log(rows[idx]);  
-  }
+var query = connection.query(
+  'UPDATE user SET name = ? WHERE id = ?', 
+  ['kenu.heo', 1 ], function(err, result) {
+  console.log(result);
 });
-
 connection.end();
