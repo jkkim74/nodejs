@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "asyncTest": "file:async",
     "express": "^4.14.1",
+    "mysql": "^2.13.0",
+    "nodemailer": "^3.1.7",
     "pug": "^2.0.0-beta11"
   }
 }

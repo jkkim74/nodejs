@@ -1,0 +1,15 @@
+<% include header %>
+<body><h1>Express</h1>
+<p>Welcome to <%= title %></p>
+<p><h3>ejs</h3> 
+<ul>
+<% for (var i in users){%>
+<li><%= users[i].id %></li>
+<li><%= users[i].name %></li>
+<li><%= users[i].email %></li>
+<% } %>
+
+</ul>
+</p>
+</body>
+<% include footer %>

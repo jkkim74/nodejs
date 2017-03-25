@@ -1,0 +1,5 @@
+const async = require('async');
+async.series([
+function((cb) => 3){console.log(1);},
+function((cb) => 4){console.log(2);}
+]);
